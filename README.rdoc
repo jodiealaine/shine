@@ -1,0 +1,3 @@
+== Shine
+
+A ruby on rails customer service application utilizing angular and bootstrap
