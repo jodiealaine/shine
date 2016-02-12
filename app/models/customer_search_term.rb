@@ -11,6 +11,7 @@ class CustomerSearchTerm
 		end
 	end
 
+private
 	def build_for_name_search(search_term)
 		@where_clause << case_insensitive_search(:first_term)
 		@where_args[:first_name] = starts_with(search_term)
@@ -45,7 +46,4 @@ class CustomerSearchTerm
 
 		@order = "lower(email) = " + ActiveRecord::Base.connection.quote(search_term) + " desc, last_name asc" 
 	end
-
-
-
 end
