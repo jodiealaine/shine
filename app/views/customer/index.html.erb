@@ -1,3 +1,14 @@
 <header>
 	<h1 class="h2">Customer Search</h1>
 </header>
+<section class="search-form">
+	<%= form_for :customers, method: :get do |f| %>
+		<div class=input-group input-group-lg>
+			<%= label_tag :keywords, nil, class: "sr-only" %>
+			<%= text_field_tag :keywords, nil, placeholder: "First Name, Last Name, or Email Address", class: "form-control input-lg" %>
+			<span class="input-group-btn">
+				<%= submit_tag "Find Customers", class: "btn btn-success btn-lg" %>
+			</span>
+		</div>
+	<% end %>
+</section>
