@@ -6,10 +6,11 @@
 		<form>
 			<div class="input-group input-group-lg">
 				<label for="keywords" class="sr-only">Keywords</label>
-				<input 	type="text"
+				<input type="text"
 								name="keywords"
 								class="form-control input-lg"
 								placeholder="First Name, Last Name, or Email Address"
+								ng-change="search(keywords)"
 								ng-model="keywords">
 				<span class="input-group-btn">
 					<button class="btn btn-primary btn-lg"
