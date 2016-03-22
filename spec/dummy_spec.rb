@@ -1,4 +1,4 @@
-require "rails_helper.rb"
+require "rails_helper"
 
 describe "testing that rspec is configured" do 
 	it "should pass" do 
